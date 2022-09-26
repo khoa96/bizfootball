@@ -15,14 +15,14 @@
           </div>
           <div class="middle-content">
             <div class="league-info">
-              <span class="league-name">Premier League</span>
+              <span class="league-name">Premier League Premier League</span>
               <span class="league-time">Jun 8, 20:45</span>
             </div>
             <button class="btn-match btn-default">Watch</button>
           </div>
           <div class="right-content club-item">
             <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
+            <span class="club-name">CHW S</span>
           </div>
         </div>
         <div class="list-top-match-item">
