@@ -237,7 +237,7 @@
                 <div class="column-60 d-flex">
                   <div class="list-club">
                     <div class="club-item column-40">
-                      <span class="club-name">Manchester</span>
+                      <span class="club-name">Athletico PR</span>
                       <img src="./images/mu-club.png" class="club-image" alt="">
                     </div>
                     <span class="score column-20">
@@ -259,7 +259,7 @@
                 <div class="column-60 d-flex">
                   <div class="list-club">
                     <div class="club-item column-40">
-                      <span class="club-name">Manchester</span>
+                      <span class="club-name">Manchester Chelsea Chelsea Chelsea</span>
                       <img src="./images/mu-club.png" class="club-image" alt="">
                     </div>
                     <span class="score column-20">
@@ -269,51 +269,7 @@
                     </span>
                     <div class="club-item column-40">
                       <img src="./images/chesea-club.png" class="club-image" alt="">
-                      <span class="club-name">Chelsea</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="column-40 text-left">
-                  <span class="time">Saturday 15 May 2004</span>
-                </div>
-                <div class="column-60 d-flex">
-                  <div class="list-club">
-                    <div class="club-item column-40">
-                      <span class="club-name">Manchester</span>
-                      <img src="./images/mu-club.png" class="club-image" alt="">
-                    </div>
-                    <span class="score column-20">
-                      <span class="score-item">5</span>
-                      <span>:</span>
-                      <span class="score-item">3</span>
-                    </span>
-                    <div class="club-item column-40">
-                      <img src="./images/chesea-club.png" class="club-image" alt="">
-                      <span class="club-name">Chelsea</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="table-row">
-                <div class="column-40 text-left">
-                  <span class="time">Saturday 15 May 2004</span>
-                </div>
-                <div class="column-60 d-flex">
-                  <div class="list-club">
-                    <div class="club-item column-40">
-                      <span class="club-name">Manchester</span>
-                      <img src="./images/mu-club.png" class="club-image" alt="">
-                    </div>
-                    <span class="score column-20">
-                      <span class="score-item">5</span>
-                      <span>:</span>
-                      <span class="score-item">3</span>
-                    </span>
-                    <div class="club-item column-40">
-                      <img src="./images/chesea-club.png" class="club-image" alt="">
-                      <span class="club-name">Chelsea</span>
+                      <span class="club-name">Chelsea  Chelsea Chelsea Chelsea</span>
                     </div>
                   </div>
                 </div>

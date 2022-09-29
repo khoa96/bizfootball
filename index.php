@@ -512,7 +512,7 @@
                           <div class="club-item">
                             <div class="club-info">
                               <img src="./images/mu-club.png" alt="" class="club-image">
-                              <span class="club-name">Liverpool</span>
+                              <span class="club-name">Liverpool Liverpool  Mu</span>
                             </div>
                             <span class="score">1</span>
                           </div>
@@ -557,7 +557,7 @@
                       <div class="timeline-item">
                         <div class="time-wrapper">
                           <span class="text-time">01:30</span>
-                          <span class="text-day">Tomorrow</span>
+                          <span class="text-day">Tomorrow at 5:00PM</span>
                         </div>
                         <div class="list-club">
                           <div class="club-item">
@@ -593,7 +593,7 @@
                       <div class="timeline-item">
                         <div class="time-wrapper">
                           <span class="text-time">01:30</span>
-                          <span class="text-day">Tonight</span>
+                          <span class="text-day">Tonight at 5:00PM</span>
                         </div>
                         <div class="list-club">
                           <div class="club-item">
@@ -644,7 +644,7 @@
                       <div class="timeline-item">
                         <div class="time-wrapper">
                           <span class="text-time">01:30</span>
-                          <span class="text-day">Tomorrow</span>
+                          <span class="text-day">Today at 5:00PM</span>
                         </div>
                         <div class="list-club">
                           <div class="club-item">

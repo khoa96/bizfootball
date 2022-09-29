@@ -424,16 +424,16 @@
   line-height: 21px;
   margin-bottom: 8px;
 }
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .coloumn-40 {
-  width: 40%;
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .column-40 {
+  width: 30%;
 }
 @media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .table-timeline-match .league-fixture__table .coloumn-40 {
+  .page-live-content-wrapper .table-timeline-match .league-fixture__table .column-40 {
     width: 100%;
   }
 }
 .page-live-content-wrapper .table-timeline-match .league-fixture__table .column-60 {
-  width: 60%;
+  width: 70%;
 }
 @media only screen and (max-width: 991px) {
   .page-live-content-wrapper .table-timeline-match .league-fixture__table .column-60 {
@@ -445,6 +445,9 @@
 }
 .page-live-content-wrapper .table-timeline-match .league-fixture__table .column-20 {
   width: 20%;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .column-50 {
+  width: 50%;
 }
 .page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row {
   padding: 12px 0px;
@@ -473,13 +476,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 24px;
   justify-content: center;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club {
-    gap: 12px;
-  }
 }
 .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item {
   display: flex;
@@ -489,6 +486,9 @@
 .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item:first-of-type {
   justify-content: flex-end;
 }
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item:first-of-type .club-name {
+  direction: rtl;
+}
 .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item:last-of-type {
   justify-content: flex-start;
 }
@@ -496,12 +496,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  min-width: max-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
 }
 @media only screen and (max-width: 991px) {
   .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item .club-name {
     font-size: 12px;
     line-height: 18px;
+    max-width: 100px;
   }
 }
 .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item .club-image {

@@ -475,7 +475,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              min-width: 60px;
+              min-width: 125px;
 
               .text-time {
                 font-style: normal;
@@ -544,6 +544,14 @@
                     font-size: 14px;
                     line-height: 21px;
                     color: #1A202C;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 200px;
+
+                    @include mq(max_md) {
+                      max-width: 100px;
+                    }
                   }
                 }
 
