@@ -60,9 +60,9 @@
 }
 .footer .footer-content .left-footer .logo-footer {
   display: block;
-  min-width: 204px;
-  height: auto;
-  max-width: 204px;
+  min-width: 190px;
+  height: 72px;
+  max-width: 190px;
   object-fit: cover;
 }
 .footer .footer-content .left-footer .dash-vertical {

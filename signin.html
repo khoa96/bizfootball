@@ -1,158 +1,167 @@
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Bizfootball</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<link data-n-head="ssr" rel="icon" type="image/x-icon" href="../images/logo.png">
 
-		<!-- STYLESHEET -->
-	  <!-- import link css heree -->
-		<link rel="stylesheet" type="text/css" href="css/common.css" />
-		<link rel="stylesheet" type="text/css" href="css/header.css" />
-		<link rel="stylesheet" type="text/css" href="css/menu.css" />
-		<link rel="stylesheet" type="text/css" href="css/footer.css" />
-		<link rel="stylesheet" type="text/css" href="css/authen.css" />
-		<link rel="stylesheet" type="text/css" href="css/football.css" />
-		<link rel="stylesheet" type="text/css" href="css/league.css" />
-		<link rel="stylesheet" type="text/css" href="css/news.css" />
-		<link rel="stylesheet" type="text/css" href="css/match.css" />
-		<link rel="stylesheet" type="text/css" href="css/price.css" />
-		<link rel="stylesheet" type="text/css" href="css/account.css" />
+<head>
+	<meta charset="UTF-8">
+	<title>Bizfootball</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link data-n-head="ssr" rel="icon" type="image/x-icon" href="../images/logo.png">
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file://-->
-		<!--if lt IE 9
+	<!-- STYLESHEET -->
+	<!-- import link css heree -->
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/authen.css" />
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+	<!--if lt IE 9
 		script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
 		script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
 		-->
-	</head>
+</head>
+
 <body>
 	<div class="header">
-	<div class="container">
-		<div class="header-content">
-			<h1>
-				<a href="#" class="logo-wrapper">
-					<img src="../images/icon-logo.png" alt="" class="logo-icon">
-					<img src="./images/logo.png" alt="" class="logo-title" />
-				</a>
-			</h1>
-			<div class="header-right">
-				<p class="header-description">Live basketball today on TV at bizfootball.com</p>
-				<div class="list-control">
-					<a href="#" target="" class="btn btn-signin">Log in</a>
-					<a href="#" target=""  class="btn btn-signup">Log in</a>
+		<div class="container">
+			<div class="header-content">
+				<h1>
+					<a href="#" class="logo-wrapper">
+						<img src="../images/icon-logo.png" alt="" class="logo-icon">
+						<img src="./images/logo.png" alt="" class="logo-title" />
+					</a>
+				</h1>
+				<div class="header-right">
+					<p class="header-description">Live basketball today on TV at bizfootball.com</p>
+					<div class="list-control">
+						<a href="#" target="" class="btn btn-signin">Log in</a>
+						<a href="#" target="" class="btn btn-signup">Log in</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>	  <div class="authen-form-wrapper">
-			<div class="container">
-				<div class="authen-form-content">
-					<div class="image-authen">
-						<img src="./images/authen-image.png" alt="">
+	<div class="authen-form-wrapper">
+		<div class="container">
+			<div class="authen-form-content">
+				<div class="image-authen">
+					<img src="./images/authen-image.png" alt="">
+				</div>
+				<div class="form-wrapper">
+					<h3 class="form-title">Sign in</h3>
+					<div class="form-item">
+						<label for="email">Your Email</label>
+						<input type="text" name="" value="" placeholder="Enter your email" id="email" />
 					</div>
-					<div class="form-wrapper">
-						<h3 class="form-title">Sign in</h3>
-						<div class="form-item">
-							<label for="email">Your Email</label>
-							<input type="text" name="" value="" placeholder="Enter your email" id="email"/>
-						</div>
-						<div class="form-item">
-							<label for="password">Password</label>
-							<input type="password" name="" value="" placeholder="Enter your password" id="password"/>
-						</div>
-						<div class="form-item">
-							<label for="confirm-password">Confirm Password</label>
-							<input type="password" name="" value="" placeholder="Enter your password" id="confirm-password"/>
-						</div>
-						<div class="list-control">
-							<button class="btn btn-submit">Sign in</button>
-						</div>
+					<div class="form-item">
+						<label for="password">Password</label>
+						<input type="password" name="" value="" placeholder="Enter your password" id="password" />
+					</div>
+					<div class="form-item">
+						<label for="confirm-password">Confirm Password</label>
+						<input type="password" name="" value="" placeholder="Enter your password" id="confirm-password" />
+					</div>
+					<div class="list-control">
+						<button class="btn btn-submit">Sign in</button>
+					</div>
 
-						<div class="register-by-socical">
-							<a href="#" target="#" class="icon-login login-facebook">
-								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_1_15419)">
-										<path d="M10.9999 21.5418C16.8219 21.5418 21.5416 16.8222 21.5416 11.0002C21.5416 5.17816 16.8219 0.458496 10.9999 0.458496C5.17792 0.458496 0.458252 5.17816 0.458252 11.0002C0.458252 16.8222 5.17792 21.5418 10.9999 21.5418Z" fill="#1877F2" />
-										<path d="M15.1034 14.0472L15.5709 11.0002H12.6472V9.02292C12.6472 8.18921 13.0556 7.37659 14.365 7.37659H15.6942V4.78242C14.9138 4.65613 14.1252 4.58719 13.3347 4.57617C10.9266 4.57617 9.35269 6.03551 9.35269 8.6778V11.0002H6.67603V14.0472H9.35269V21.4135C10.4442 21.5846 11.5557 21.5846 12.6472 21.4135V14.0472H15.1034Z" fill="white" />
-									</g>
-									<defs>
-										<clipPath id="clip0_1_15419">
-											<rect width="22" height="22" fill="white" />
-										</clipPath>
-									</defs>
-								</svg>
-							</a>
-							<a href="#" class="icon-login login-google">
-								<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M10.4981 4.79471C11.9557 4.79382 13.3665 5.3089 14.4807 6.24869L17.6015 3.27679C16.4035 2.17215 14.9645 1.36194 13.3988 0.910465C11.833 0.458986 10.1836 0.378663 8.58137 0.675873C6.97916 0.973082 5.46828 1.63964 4.16863 2.62265C2.86898 3.60566 1.81634 4.87807 1.09424 6.33888L4.61251 9.05072C5.02283 7.81342 5.81204 6.73658 6.86835 5.97274C7.92467 5.20889 9.19454 4.79676 10.4981 4.79471Z" fill="#D94F3D" />
-									<path d="M4.29465 10.9981C4.29553 10.3361 4.40284 9.67861 4.61245 9.0507L1.09418 6.33887C0.374515 7.7866 0 9.38136 0 10.9981C0 12.6148 0.374515 14.2096 1.09418 15.6573L4.61245 12.9455C4.40284 12.3176 4.29553 11.6601 4.29465 10.9981Z" fill="#F2C042" />
-									<path d="M20.5665 9.08936H10.5457V13.384H16.2241C15.8863 14.5983 15.1124 15.6453 14.0506 16.3244L17.5416 19.0157C19.7725 17.0135 21.0833 13.7576 20.5665 9.08936Z" fill="#5085ED" />
-									<path d="M14.0493 16.3243C12.9704 16.9418 11.7404 17.2455 10.4981 17.2013C9.19454 17.1993 7.92467 16.7871 6.86835 16.0233C5.81204 15.2594 5.02283 14.1826 4.61251 12.9453L1.09424 15.6571C1.96326 17.4089 3.30381 18.8835 4.96513 19.915C6.62644 20.9465 8.54261 21.494 10.4981 21.496C13.0712 21.5659 15.5794 20.6821 17.5404 19.0146L14.0493 16.3243Z" fill="#57A75C" />
-								</svg>
-							</a>
-						</div>
-						<p class="login-description">Register a new membership</p>
+					<div class="register-by-socical">
+						<a href="#" target="#" class="icon-login login-facebook">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_15419)">
+									<path
+										d="M10.9999 21.5418C16.8219 21.5418 21.5416 16.8222 21.5416 11.0002C21.5416 5.17816 16.8219 0.458496 10.9999 0.458496C5.17792 0.458496 0.458252 5.17816 0.458252 11.0002C0.458252 16.8222 5.17792 21.5418 10.9999 21.5418Z"
+										fill="#1877F2" />
+									<path
+										d="M15.1034 14.0472L15.5709 11.0002H12.6472V9.02292C12.6472 8.18921 13.0556 7.37659 14.365 7.37659H15.6942V4.78242C14.9138 4.65613 14.1252 4.58719 13.3347 4.57617C10.9266 4.57617 9.35269 6.03551 9.35269 8.6778V11.0002H6.67603V14.0472H9.35269V21.4135C10.4442 21.5846 11.5557 21.5846 12.6472 21.4135V14.0472H15.1034Z"
+										fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_15419">
+										<rect width="22" height="22" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="#" class="icon-login login-google">
+							<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.4981 4.79471C11.9557 4.79382 13.3665 5.3089 14.4807 6.24869L17.6015 3.27679C16.4035 2.17215 14.9645 1.36194 13.3988 0.910465C11.833 0.458986 10.1836 0.378663 8.58137 0.675873C6.97916 0.973082 5.46828 1.63964 4.16863 2.62265C2.86898 3.60566 1.81634 4.87807 1.09424 6.33888L4.61251 9.05072C5.02283 7.81342 5.81204 6.73658 6.86835 5.97274C7.92467 5.20889 9.19454 4.79676 10.4981 4.79471Z"
+									fill="#D94F3D" />
+								<path
+									d="M4.29465 10.9981C4.29553 10.3361 4.40284 9.67861 4.61245 9.0507L1.09418 6.33887C0.374515 7.7866 0 9.38136 0 10.9981C0 12.6148 0.374515 14.2096 1.09418 15.6573L4.61245 12.9455C4.40284 12.3176 4.29553 11.6601 4.29465 10.9981Z"
+									fill="#F2C042" />
+								<path
+									d="M20.5665 9.08936H10.5457V13.384H16.2241C15.8863 14.5983 15.1124 15.6453 14.0506 16.3244L17.5416 19.0157C19.7725 17.0135 21.0833 13.7576 20.5665 9.08936Z"
+									fill="#5085ED" />
+								<path
+									d="M14.0493 16.3243C12.9704 16.9418 11.7404 17.2455 10.4981 17.2013C9.19454 17.1993 7.92467 16.7871 6.86835 16.0233C5.81204 15.2594 5.02283 14.1826 4.61251 12.9453L1.09424 15.6571C1.96326 17.4089 3.30381 18.8835 4.96513 19.915C6.62644 20.9465 8.54261 21.494 10.4981 21.496C13.0712 21.5659 15.5794 20.6821 17.5404 19.0146L14.0493 16.3243Z"
+									fill="#57A75C" />
+							</svg>
+						</a>
 					</div>
+					<p class="login-description">Register a new membership</p>
 				</div>
 			</div>
 		</div>
+	</div>
 	<!-- start footer block -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="left-footer">
-        <a href="#" target="">
-          <img src="../images/logo-footer.png" alt="" class="logo-footer">
-        </a>
-        <img src="../images/dash-vertical.png" alt="" class="dash-vertical">
-        <img src="../images/dash-horizontal.png" alt="" class="dash-horizontal">
-      </div>
-      <div class="right-footer">
-        <p class="footer-description">
-          AMZSport is the world’s only sports-focused live TV streaming service with top leagues and teams.
-          <br />
-          Email: bingsport.com@gmail.com.
-        </p>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="left-footer">
+					<a href="#" target="">
+						<img src="../images/logo-footer.png" alt="" class="logo-footer">
+					</a>
+					<img src="../images/dash-vertical.png" alt="" class="dash-vertical">
+					<img src="../images/dash-horizontal.png" alt="" class="dash-horizontal">
+				</div>
+				<div class="right-footer">
+					<p class="footer-description">
+						AMZSport is the world’s only sports-focused live TV streaming service with top leagues and teams.
+						<br />
+						Email: bingsport.com@gmail.com.
+					</p>
 
-        <ul class="menu-footer">
-          <li>
-            <a href="#" target="">Disclaimer</a>
-          </li>
-          <li>
-            <a href="#" target="">Privacy Policy</a>
-          </li>
-          <li>
-            <a href="#" target="">Terms of use</a>
-          </li>
-          <li>
-            <a href="#" target="">Account</a>
-          </li>
-          <li>
-            <a href="#" target="">Contact</a>
-          </li>
-          <li>
-            <a href="#" target="">Video API</a>
-          </li>
-          <li>
-            <a href="#" target="">Livescore Widget</a>
-          </li>
-        </ul>
-        <p class="copy-right">All Rights Reserved © 2014-2022</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- /.footer -->
-<!-- JAVASCRIPT-->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/menu.js"></script></body>
+					<ul class="menu-footer">
+						<li>
+							<a href="#" target="">Disclaimer</a>
+						</li>
+						<li>
+							<a href="#" target="">Privacy Policy</a>
+						</li>
+						<li>
+							<a href="#" target="">Terms of use</a>
+						</li>
+						<li>
+							<a href="#" target="">Account</a>
+						</li>
+						<li>
+							<a href="#" target="">Contact</a>
+						</li>
+						<li>
+							<a href="#" target="">Video API</a>
+						</li>
+						<li>
+							<a href="#" target="">Livescore Widget</a>
+						</li>
+					</ul>
+					<p class="copy-right">All Rights Reserved © 2014-2022</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /.footer -->
+	<!-- JAVASCRIPT-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/menu.js"></script>
+</body>
 
 
 </html>

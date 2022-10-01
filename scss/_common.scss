@@ -1349,6 +1349,39 @@ p {
 		}
 	}
 
+	.total-purchase {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 48px;
+		/* identical to box height */
+
+
+		/* Gray:900 */
+
+		color: #1A202C;
+		display: inline-block;
+		margin-bottom: 16px;
+	}
+
+	.list-btn {
+		display: flex;
+		gap: 16px;
+		margin-bottom: 24px;;
+
+		.btn-view {
+			color: #F91E4E !important;
+			font-weight: 400 !important;
+			background-color: rgba(249, 30, 78, 0.1) !important;
+		}
+	}
+	.contact-us {
+		color: #F91E4E;
+	}
+
+	.description {
+		margin-bottom: 48px;
+	}
 	.btn-back {
 		min-width: 190px;
 		display: block;
@@ -1363,9 +1396,9 @@ p {
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 21px;
-		background-color: $primary-color;
+		background-color: #F91E4E;
 		border-radius: 4px;
-		color: $content-primary;
+		color: #fff;
 		font-family: 'Poppins';
 		text-decoration: none;
 

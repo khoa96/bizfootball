@@ -1219,6 +1219,33 @@ p {
     margin: 10px 0px 14px 0px;
   }
 }
+.thankiu-page-wrapper .total-purchase {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #1A202C;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.thankiu-page-wrapper .list-btn {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.thankiu-page-wrapper .list-btn .btn-view {
+  color: #F91E4E !important;
+  font-weight: 400 !important;
+  background-color: rgba(249, 30, 78, 0.1) !important;
+}
+.thankiu-page-wrapper .contact-us {
+  color: #F91E4E;
+}
+.thankiu-page-wrapper .description {
+  margin-bottom: 48px;
+}
 .thankiu-page-wrapper .btn-back {
   min-width: 190px;
   display: block;
@@ -1233,9 +1260,9 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  background-color: #FDC400;
+  background-color: #F91E4E;
   border-radius: 4px;
-  color: #1A202C;
+  color: #fff;
   font-family: "Poppins";
   text-decoration: none;
 }

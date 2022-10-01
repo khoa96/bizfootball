@@ -50,17 +50,51 @@
     }
 
     .logo-title {
-      min-width: 170px;
-      max-width: 170px;
-      height: 18px;
-      object-fit: cover;
-      margin-top: 8px;
+      min-width: 107px;
+      max-width: 107px;
+      height: 34px;
+      object-fit: contain;
+      margin-top: 4px;
+    }
+  }
 
-      @include mq(max_md) {
-        min-width: 117px;
-        max-width: 117px;
-        height: 13px;
+  .menu-header {
+    display: flex;
+    gap: 24px;
+    position: absolute;
+    left: 300px;
+    top: 7px;
+    list-style: none;
+    align-items: center;
+
+    li {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        display: block;
+        padding-bottom: 11px;
+        border-bottom: 4px solid transparent;;
+        color: #1A202C;
+
+        &:hover {
+          border-bottom-color: #F91E4E;
+          color: #F91E4E;
+          text-decoration: none;
+        }
       }
+    }
+
+    .active {
+      a {
+        border-bottom-color: #F91E4E;
+        color: #F91E4E;
+      }
+    }
+
+    @include mq(max_md) {
+      display: none;
     }
   }
 

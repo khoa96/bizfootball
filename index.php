@@ -307,11 +307,10 @@
           <div id="all" class="tabcontent">
             <div id="all-league-tabs">
               <ul class="sub-tabs-nav">
-                <li><a href="#tabs-1">Yesterday</a></li>
-                <li><a href="#tabs-2">Today</a></li>
-                <li><a href="#tabs-3">Tomorrow</a></li>
+                <li><a href="#tabs-1">All Games</a></li>
+                <li><a href="#tabs-2">Live</a></li>
+                <li><a href="#tabs-3">Not Started</a></li>
                 <li><a href="#tabs-4">Hot Match</a></li>
-                <li><a href="#tabs-5">Proin dolor</a></li>
               </ul>
               <div id="tabs-1">
                 <div class="list-league">
@@ -593,7 +592,7 @@
                       <div class="timeline-item">
                         <div class="time-wrapper">
                           <span class="text-time">01:30</span>
-                          <span class="text-day">Tonight at 5:00PM</span>
+                          <span class="text-live">34'</span>
                         </div>
                         <div class="list-club">
                           <div class="club-item">
@@ -848,20 +847,16 @@
               <div id="tabs-4">
                 tab4
               </div>
-              <div id="tabs-5">
-                tab5
-              </div>
             </div>
           </div>
 
           <div id="champions" class="tabcontent">
             <div id="champions-league-tabs">
               <ul class="sub-tabs-nav">
-                <li><a href="#tabs-1">Yesterday</a></li>
-                <li><a href="#tabs-2">Today</a></li>
-                <li><a href="#tabs-3">Tomorrow</a></li>
-                <li><a href="#tabs-4">Hot Match</a></li>
-                <li><a href="#tabs-5">Proin dolor</a></li>
+                <li><a href="#tabs-1">All Games</a></li>
+                <li><a href="#tabs-2">Live</a></li>
+                <li><a href="#tabs-3">Not Started</a></li>
+                <li><a href="#tabs-4">Finished</a></li>
               </ul>
               <div id="tabs-1">
                 <div class="list-league">
@@ -1194,9 +1189,6 @@
               </div>
               <div id="tabs-4">
                 tab4
-              </div>
-              <div id="tabs-5">
-                tab5
               </div>
             </div>
           </div>
@@ -1896,5 +1888,42 @@
   </div>
   <?php include "templates/footer.php"; ?>
 </body>
+<script>
+  function checkFlexGap() {
+  // create flex container with row-gap set
+  var flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
 
+  // create two, elements inside it
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
+
+  // append to the DOM (needed to obtain scrollHeight)
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1; // flex container should be 1px high from the row-gap
+  flex.parentNode.removeChild(flex);
+
+  return isSupported;
+}
+
+//   $( document ).ready(function() {
+//    $("*").each(function() {
+//     // console.log('$(this).css ====', $(this).css('gap'))
+//     // console.log('this.flex', $(this).css('display'))
+//     // console.log('this.direction', $(this).css('flexDirection'))
+//     if ($(this).css('gap') !== 'normal') {
+//       const value = $(this).css('gap')
+//       $(this).css('gap', '0px')
+//       $(this).css('border', '1px solid red')
+//       $(this).children().each(function() {
+//         // $(this).css('marginRight', value)
+//       })
+
+//     }
+//    })
+
+// });
+</script>
 </html>

@@ -29,17 +29,27 @@
   <div class="header">
 	<div class="container">
 		<div class="header-content">
-			<h1>
-				<a href="#" class="logo-wrapper">
-					<img src="../images/icon-logo.png" alt="" class="logo-icon">
-					<img src="./images/logo.png" alt="" class="logo-title" />
-				</a>
-			</h1>
+			<div>
+				<h1>
+					<a href="#" class="logo-wrapper">
+						<img src="../images/icon-logo.png" alt="" class="logo-icon">
+						<img src="./images/logo.png" alt="" class="logo-title" />
+					</a>
+				</h1>
+				<ul class="menu-header">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Price</a>
+					</li>
+				</ul>
+			</div>
 			<div class="header-right">
 				<p class="header-description">Live basketball today on TV at bizfootball.com</p>
 				<div class="list-control">
 					<a href="#" target="" class="btn btn-signin">Log in</a>
-					<a href="#" target=""  class="btn btn-signup">Log in</a>
+					<a href="#" target="" class="btn btn-signup">Log in</a>
 				</div>
 			</div>
 		</div>
@@ -289,14 +299,14 @@
           </div>
           <div class="middle-content">
             <div class="league-info">
-              <span class="league-name">Premier League</span>
+              <span class="league-name">Premier League Premier League</span>
               <span class="league-time">Jun 8, 20:45</span>
             </div>
             <button class="btn-match btn-default">Watch</button>
           </div>
           <div class="right-content club-item">
             <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
+            <span class="club-name">CHW S</span>
           </div>
         </div>
         <div class="list-top-match-item">
@@ -581,11 +591,10 @@
           <div id="all" class="tabcontent">
             <div id="all-league-tabs">
               <ul class="sub-tabs-nav">
-                <li><a href="#tabs-1">Yesterday</a></li>
-                <li><a href="#tabs-2">Today</a></li>
-                <li><a href="#tabs-3">Tomorrow</a></li>
+                <li><a href="#tabs-1">All Games</a></li>
+                <li><a href="#tabs-2">Live</a></li>
+                <li><a href="#tabs-3">Not Started</a></li>
                 <li><a href="#tabs-4">Hot Match</a></li>
-                <li><a href="#tabs-5">Proin dolor</a></li>
               </ul>
               <div id="tabs-1">
                 <div class="list-league">
@@ -786,7 +795,7 @@
                           <div class="club-item">
                             <div class="club-info">
                               <img src="./images/mu-club.png" alt="" class="club-image">
-                              <span class="club-name">Liverpool</span>
+                              <span class="club-name">Liverpool Liverpool  Mu</span>
                             </div>
                             <span class="score">1</span>
                           </div>
@@ -831,7 +840,7 @@
                       <div class="timeline-item">
                         <div class="time-wrapper">
                           <span class="text-time">01:30</span>
-                          <span class="text-day">Tomorrow</span>
+                          <span class="text-day">Tomorrow at 5:00PM</span>
                         </div>
                         <div class="list-club">
                           <div class="club-item">
@@ -867,7 +876,7 @@
                       <div class="timeline-item">
                         <div class="time-wrapper">
                           <span class="text-time">01:30</span>
-                          <span class="text-day">Tonight</span>
+                          <span class="text-live">34'</span>
                         </div>
                         <div class="list-club">
                           <div class="club-item">
@@ -918,7 +927,7 @@
                       <div class="timeline-item">
                         <div class="time-wrapper">
                           <span class="text-time">01:30</span>
-                          <span class="text-day">Tomorrow</span>
+                          <span class="text-day">Today at 5:00PM</span>
                         </div>
                         <div class="list-club">
                           <div class="club-item">
@@ -1122,20 +1131,16 @@
               <div id="tabs-4">
                 tab4
               </div>
-              <div id="tabs-5">
-                tab5
-              </div>
             </div>
           </div>
 
           <div id="champions" class="tabcontent">
             <div id="champions-league-tabs">
               <ul class="sub-tabs-nav">
-                <li><a href="#tabs-1">Yesterday</a></li>
-                <li><a href="#tabs-2">Today</a></li>
-                <li><a href="#tabs-3">Tomorrow</a></li>
-                <li><a href="#tabs-4">Hot Match</a></li>
-                <li><a href="#tabs-5">Proin dolor</a></li>
+                <li><a href="#tabs-1">All Games</a></li>
+                <li><a href="#tabs-2">Live</a></li>
+                <li><a href="#tabs-3">Not Started</a></li>
+                <li><a href="#tabs-4">Finished</a></li>
               </ul>
               <div id="tabs-1">
                 <div class="list-league">
@@ -1468,9 +1473,6 @@
               </div>
               <div id="tabs-4">
                 tab4
-              </div>
-              <div id="tabs-5">
-                tab5
               </div>
             </div>
           </div>
@@ -2243,5 +2245,43 @@
 <script src="js/menu.js"></script>
 <script src="js/main.js"></script>
 </body>
+<script>
+  function checkFlexGap() {
+  // create flex container with row-gap set
+  var flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
 
+  // create two, elements inside it
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
+
+  // append to the DOM (needed to obtain scrollHeight)
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1; // flex container should be 1px high from the row-gap
+  flex.parentNode.removeChild(flex);
+
+  return isSupported;
+}
+
+// console.log('test ======', test)
+//   $( document ).ready(function() {
+//    $("*").each(function() {
+//     // console.log('$(this).css ====', $(this).css('gap'))
+//     // console.log('this.flex', $(this).css('display'))
+//     // console.log('this.direction', $(this).css('flexDirection'))
+//     if ($(this).css('gap') !== 'normal') {
+//       const value = $(this).css('gap')
+//       $(this).css('gap', '0px')
+//       $(this).css('border', '1px solid red')
+//       $(this).children().each(function() {
+//         // $(this).css('marginRight', value)
+//       })
+
+//     }
+//    })
+
+// });
+</script>
 </html>
