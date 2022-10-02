@@ -178,10 +178,7 @@ $(function () {
     }
 }
 const browerName = detectBrowser()
-console.log('browerName ====', browerName)
-  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   if (browerName === 'Safari') {
-    console.log('------call here ------')
     // support safari cannot support gap css property
     $("*").each(function(){
       const displayPro = $(this).css('display')
@@ -192,6 +189,7 @@ console.log('browerName ====', browerName)
          parent.children().each(function(index) {
           if (directionPro === 'row') {
             $(this).css('marginRight', gapPro)
+            $(this).css('border', '1px solid red')
           } else if (directionPro === 'column') {
             $(this).css('marginBottom', gapPro)
           }
