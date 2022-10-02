@@ -162,7 +162,9 @@ $(function () {
   }
 
   const isSupportGap = checkFlexGap()
-  if (!isSupportGap) {
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (isSafari) {
+    console.log('------call here ------')
     // support safari cannot support gap css property
     $("*").each(function(){
       const displayPro = $(this).css('display')
