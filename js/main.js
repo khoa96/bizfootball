@@ -162,7 +162,6 @@ $(function () {
   }
 
   const isSupportGap = checkFlexGap()
-  console.log('isSupportGap =====', isSupportGap)
   function detectBrowser() {
     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) {
         return 'Opera';
@@ -181,7 +180,6 @@ $(function () {
 const browerName = detectBrowser()
   if (!isSupportGap || browerName === 'Safari') {
     // support safari cannot support gap css property
-    console.log('=======call here =======')
     $("*").each(function(){
       const displayPro = $(this).css('display')
       const rowGap = $(this).css('row-gap')
