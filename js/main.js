@@ -162,6 +162,7 @@ $(function () {
   }
 
   const isSupportGap = checkFlexGap()
+  console.log('isSupportGap =====', isSupportGap)
   function detectBrowser() {
     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) {
         return 'Opera';
@@ -178,20 +179,21 @@ $(function () {
     }
 }
 const browerName = detectBrowser()
-  if (browerName === 'Safari') {
+  if (!isSupportGap || browerName === 'Safari') {
     // support safari cannot support gap css property
+    console.log('=======call here =======')
     $("*").each(function(){
       const displayPro = $(this).css('display')
-      const gapPro = $(this).css('gap')
+      const rowGap = $(this).css('row-gap')
+      const columnGap = $(this).css('column-gap')
       const directionPro = $(this).css('flexDirection')
-      if (displayPro === 'flex' && gapPro !== 'normal') {
+      if (displayPro === 'flex' && (rowGap !== 'normal' || columnGap !== 'normal')) {
         const parent = $(this)
-         parent.children().each(function(index) {
+        parent.children().each(function(index) {
           if (directionPro === 'row') {
-            $(this).css('marginRight', gapPro)
-            $(this).css('border', '1px solid red')
+            $(this).css('margin-right', columnGap)
           } else if (directionPro === 'column') {
-            $(this).css('marginBottom', gapPro)
+            $(this).css('margin-bottom', rowGap)
           }
          })
 
