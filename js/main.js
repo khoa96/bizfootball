@@ -139,3 +139,47 @@ $(".league-ranking-item").on('click', function () {
   // code something here .....
 })
 // =================== HANDLE SELECT LEAGUE RANKING ===================
+
+
+$(function () {
+  function checkFlexGap() {
+    // create flex container with row-gap set
+    var flex = document.createElement("div");
+    flex.style.display = "flex";
+    flex.style.flexDirection = "column";
+    flex.style.rowGap = "1px";
+
+    // create two, elements inside it
+    flex.appendChild(document.createElement("div"));
+    flex.appendChild(document.createElement("div"));
+
+    // append to the DOM (needed to obtain scrollHeight)
+    document.body.appendChild(flex);
+    var isSupported = flex.scrollHeight === 1; // flex container should be 1px high from the row-gap
+    flex.parentNode.removeChild(flex);
+
+    return isSupported;
+  }
+
+  const isSupportGap = checkFlexGap()
+  if (!isSupportGap) {
+    // support safari cannot support gap css property
+    $("*").each(function(){
+      const displayPro = $(this).css('display')
+      const gapPro = $(this).css('gap')
+      const directionPro = $(this).css('flexDirection')
+      if (displayPro === 'flex' && gapPro !== 'normal') {
+        const parent = $(this)
+         parent.children().each(function(index) {
+          if (directionPro === 'row') {
+            $(this).css('marginRight', gapPro)
+          } else if (directionPro === 'column') {
+            $(this).css('marginBottom', gapPro)
+          }
+         })
+
+      }
+    })
+  }
+
+});

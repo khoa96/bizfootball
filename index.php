@@ -1888,42 +1888,4 @@
   </div>
   <?php include "templates/footer.php"; ?>
 </body>
-<script>
-  function checkFlexGap() {
-  // create flex container with row-gap set
-  var flex = document.createElement("div");
-  flex.style.display = "flex";
-  flex.style.flexDirection = "column";
-  flex.style.rowGap = "1px";
-
-  // create two, elements inside it
-  flex.appendChild(document.createElement("div"));
-  flex.appendChild(document.createElement("div"));
-
-  // append to the DOM (needed to obtain scrollHeight)
-  document.body.appendChild(flex);
-  var isSupported = flex.scrollHeight === 1; // flex container should be 1px high from the row-gap
-  flex.parentNode.removeChild(flex);
-
-  return isSupported;
-}
-
-//   $( document ).ready(function() {
-//    $("*").each(function() {
-//     // console.log('$(this).css ====', $(this).css('gap'))
-//     // console.log('this.flex', $(this).css('display'))
-//     // console.log('this.direction', $(this).css('flexDirection'))
-//     if ($(this).css('gap') !== 'normal') {
-//       const value = $(this).css('gap')
-//       $(this).css('gap', '0px')
-//       $(this).css('border', '1px solid red')
-//       $(this).children().each(function() {
-//         // $(this).css('marginRight', value)
-//       })
-
-//     }
-//    })
-
-// });
-</script>
 </html>
