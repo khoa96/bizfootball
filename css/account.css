@@ -274,8 +274,9 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  background-color: #FDC400;
+  background-color: #F91E4E;
   color: white;
+  border-radius: 4px;
   font-family: "Poppins";
 }
 .account-page-wrapper .transaction-wrapper .list-transaction .table-row .btn-view-transaction:focus {

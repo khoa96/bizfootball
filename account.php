@@ -27,6 +27,10 @@
             <p class="line">
               <a href="#" target="" class="text-link">Change password</a>
             </p>
+            <p class="line">
+              <span>Expiration Date: </span>
+              <a href="#" target="" class="text-link">2025-12-20 02:02:19</a>
+            </p>
           </div>
         </div>
         <button class="btn-log-out">Log out</button>
