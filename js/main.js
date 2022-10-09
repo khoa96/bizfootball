@@ -1,5 +1,8 @@
-
 $(function () {
+  // =======CONTROLS LINEUPS TABS ========
+  $("#line-up-tabs").tabs({
+    active: 0,
+  });
 
   // =======HANDLE DATEPICKER FOR PC ========
   $("#datepicker").datepicker({
@@ -12,16 +15,15 @@ $(function () {
         // handle select datetime here
         alert("Selected Date: " + date);
       }
-    }
+    },
   });
   // =======HANDLE DATEPICKER FOR PC ========
-
 
   // =======HANDLE DATEPICKER FOR MOBILE ========
   $("#datepicker-mobile").hide();
   // handle datepicker for mobile
   function padTo2Digits(num) {
-    return num.toString().padStart(2, '0');
+    return num.toString().padStart(2, "0");
   }
 
   function formatDate(date = new Date()) {
@@ -29,13 +31,13 @@ $(function () {
       padTo2Digits(date.getDate()),
       padTo2Digits(date.getMonth() + 1),
       date.getFullYear(),
-    ].join('/');
+    ].join("/");
   }
   const date = new Date();
-  $("#time-calender").text(formatDate())
-  $("#btn-show-calender").on('click', function (event) {
-    $("#datepicker-mobile").show()
-    $(".list-league-dropdown").hide()
+  $("#time-calender").text(formatDate());
+  $("#btn-show-calender").on("click", function (event) {
+    $("#datepicker-mobile").show();
+    $(".list-league-dropdown").hide();
     $("#datepicker-mobile").datepicker({
       firstDay: 1,
       showOtherMonths: true,
@@ -44,22 +46,21 @@ $(function () {
       onSelect: function (date, datepicker) {
         if (date) {
           // handle select datetime here
-          $("#time-calender").text(date)
+          $("#time-calender").text(date);
           $("#datepicker-mobile").hide();
         }
-      }
-    })
-  })
+      },
+    });
+  });
   $("#all-league-tabs").tabs({
-    active: 1
-  })
+    active: 1,
+  });
   $("#champions-league-tabs").tabs({
-    active: 1
-  })
+    active: 1,
+  });
 });
 
 // =======HANDLE DATEPICKER FOR MOBILE ========
-
 
 // ===========HANDLE CLICK TAB LEFT SIDEBAR FOR PC =======
 function openTab(evt, tabName) {
@@ -84,36 +85,33 @@ function openTab(evt, tabName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-const nodeDefault = document.getElementById("defaultOpen")
+const nodeDefault = document.getElementById("defaultOpen");
 if (nodeDefault) {
   nodeDefault.click();
 }
 
 // ===========HANDLE CLICK TAB LEFT SIDEBAR FOR PC =======
 
-
-
 // ===========HANDLE OPEN TAB LEFT SIDEBAR FOR MOBILE (select league)=======
 $(".list-league-dropdown").hide();
-$("#btn-league-dropdown").on('click', function () {
-  $("#datepicker-mobile").hide()
-  $(".list-league-dropdown").toggle()
-})
+$("#btn-league-dropdown").on("click", function () {
+  $("#datepicker-mobile").hide();
+  $(".list-league-dropdown").toggle();
+});
 
 // handle click league for mobile
-$(".league-dropdown-item").on('click', function () {
-  const imgElement = $(this).children('img')
-  const spanElement = $(this).children('span')
+$(".league-dropdown-item").on("click", function () {
+  const imgElement = $(this).children("img");
+  const spanElement = $(this).children("span");
   if (imgElement.length && spanElement.length) {
-    const src = imgElement.attr('src')
-    const leagueName = spanElement.text()
-    $("#league-image-mobile").attr('src', src)
-    $("#league-name-mobile").text(leagueName)
+    const src = imgElement.attr("src");
+    const leagueName = spanElement.text();
+    $("#league-image-mobile").attr("src", src);
+    $("#league-name-mobile").text(leagueName);
   }
   $(".list-league-dropdown").hide();
   //code something here .....
-})
-
+});
 
 // =================== HANDLE SELECT LEAGUE RANKING ===================
 
@@ -121,25 +119,24 @@ $(".league-dropdown-item").on('click', function () {
 $(".list-league-ranking-dropdown").hide();
 
 // toggle show list league ranking when click.
-$("#btn-league-ranking-dropdown").on('click', function () {
-  $(".list-league-ranking-dropdown").toggle()
-})
+$("#btn-league-ranking-dropdown").on("click", function () {
+  $(".list-league-ranking-dropdown").toggle();
+});
 
 // handle click league for mobile
-$(".league-ranking-item").on('click', function () {
-  const imgElement = $(this).children('img')
-  const spanElement = $(this).children('span')
+$(".league-ranking-item").on("click", function () {
+  const imgElement = $(this).children("img");
+  const spanElement = $(this).children("span");
   if (imgElement.length && spanElement.length) {
-    const src = imgElement.attr('src')
-    const leagueName = spanElement.text()
-    $("#league-ranking-image").attr('src', src)
-    $("#league-ranking-name").text(leagueName)
+    const src = imgElement.attr("src");
+    const leagueName = spanElement.text();
+    $("#league-ranking-image").attr("src", src);
+    $("#league-ranking-name").text(leagueName);
   }
   $(".list-league-ranking-dropdown").hide();
   // code something here .....
-})
+});
 // =================== HANDLE SELECT LEAGUE RANKING ===================
-
 
 $(function () {
   function checkFlexGap() {
@@ -161,42 +158,49 @@ $(function () {
     return isSupported;
   }
 
-  const isSupportGap = checkFlexGap()
+  const isSupportGap = checkFlexGap();
   function detectBrowser() {
-    if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) {
-        return 'Opera';
-    } else if(navigator.userAgent.indexOf("Chrome") != -1 ) {
-        return 'Chrome';
-    } else if(navigator.userAgent.indexOf("Safari") != -1) {
-        return 'Safari';
-    } else if(navigator.userAgent.indexOf("Firefox") != -1 ){
-        return 'Firefox';
-    } else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {
-        return 'IE';//crap
+    if (
+      (navigator.userAgent.indexOf("Opera") ||
+        navigator.userAgent.indexOf("OPR")) != -1
+    ) {
+      return "Opera";
+    } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+      return "Chrome";
+    } else if (navigator.userAgent.indexOf("Safari") != -1) {
+      return "Safari";
+    } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+      return "Firefox";
+    } else if (
+      navigator.userAgent.indexOf("MSIE") != -1 ||
+      !!document.documentMode == true
+    ) {
+      return "IE"; //crap
     } else {
-        return 'Unknown';
+      return "Unknown";
     }
-}
-const browerName = detectBrowser()
-  if (!isSupportGap || browerName === 'Safari') {
-    // support safari cannot support gap css property
-    $("*").each(function(){
-      const displayPro = $(this).css('display')
-      const rowGap = $(this).css('row-gap')
-      const columnGap = $(this).css('column-gap')
-      const directionPro = $(this).css('flexDirection')
-      if (displayPro === 'flex' && (rowGap !== 'normal' || columnGap !== 'normal')) {
-        const parent = $(this)
-        parent.children().each(function(index) {
-          if (directionPro === 'row') {
-            $(this).css('margin-right', columnGap)
-          } else if (directionPro === 'column') {
-            $(this).css('margin-bottom', rowGap)
-          }
-         })
-
-      }
-    })
   }
-
+  const browerName = detectBrowser();
+  if (!isSupportGap || browerName === "Safari") {
+    // support safari cannot support gap css property
+    $("*").each(function () {
+      const displayPro = $(this).css("display");
+      const rowGap = $(this).css("row-gap");
+      const columnGap = $(this).css("column-gap");
+      const directionPro = $(this).css("flexDirection");
+      if (
+        displayPro === "flex" &&
+        (rowGap !== "normal" || columnGap !== "normal")
+      ) {
+        const parent = $(this);
+        parent.children().each(function (index) {
+          if (directionPro === "row") {
+            $(this).css("margin-right", columnGap);
+          } else if (directionPro === "column") {
+            $(this).css("margin-bottom", rowGap);
+          }
+        });
+      }
+    });
+  }
 });

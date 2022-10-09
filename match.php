@@ -699,12 +699,4 @@
   </div>
   <?php include "templates/footer.php"; ?>
 </body>
-<script>
-  $(function() {
-    $("#line-up-tabs").tabs({
-      active: 0
-    });
-  });
-</script>
-
 </html>
