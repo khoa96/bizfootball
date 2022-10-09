@@ -90,7 +90,67 @@
             <p class="step-description">All amounts shown are in USD.</p>
           </div>
           <div id="tabs-2">
-            tab2
+          <div class="list-plan">
+              <div class="plan-item active">
+                <span class="icon-checked">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="22" height="22" rx="11" fill="#18B745" />
+                    <g clip-path="url(#clip0_326_6204)">
+                      <path d="M7.33301 12L10.6663 15.3333L17.333 8.66663" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_326_6204">
+                        <rect width="16" height="16" fill="white" transform="translate(4 4)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+                <h4 class="plan-title">1 Months</h4>
+                <div class="price-wrapper">
+                  <span class="prev-price">$10.99</span>
+                  <div class="primary-price">
+                    <span class="sign">$</span>
+                    <span class="price">4</span>
+                    <span class="month">/mo</span>
+                  </div>
+                </div>
+                <span class="save-label">Save 5%</span>
+                <button class="btn-select-plan">Get 1 month plan</button>
+                <p class="plan-description">31-Day money-back guarantee</p>
+              </div>
+
+              <div class="plan-item">
+                <span class="recomend-label">Most popular</span>
+                <h4 class="plan-title">12<span class="highlight">+3 Months Free</span></h4>
+                <div class="price-wrapper">
+                  <span class="prev-price">$10.99</span>
+                  <div class="primary-price">
+                    <span class="sign">$</span>
+                    <span class="price">3.5</span>
+                    <span class="month">/mo</span>
+                  </div>
+                </div>
+                <span class="save-label">Save 10%</span>
+                <button class="btn-select-plan">Get 1 month plan</button>
+                <p class="plan-description">31-Day money-back guarantee</p>
+              </div>
+
+              <div class="plan-item">
+                <h4 class="plan-title">6 Months</h4>
+                <div class="price-wrapper">
+                  <span class="prev-price">$10.99</span>
+                  <div class="primary-price">
+                    <span class="sign">$</span>
+                    <span class="price">3</span>
+                    <span class="month">/mo</span>
+                  </div>
+                </div>
+                <span class="save-label">Save 15%</span>
+                <button class="btn-select-plan">Get 1 month plan</button>
+                <p class="plan-description">31-Day money-back guarantee</p>
+              </div>
+            </div>
+            <p class="step-description">All amounts shown are in USD.</p>
           </div>
         </div>
         <!-- TABS SELECT PLAN -->
