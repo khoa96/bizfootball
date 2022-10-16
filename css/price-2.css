@@ -177,11 +177,13 @@
   align-items: center;
   gap: 40px;
   justify-content: center;
+  margin-top: 16px;
 }
 @media only screen and (max-width: 991px) {
   .page-price-wrapper .seclect-plan-wrapper .list-plan {
     flex-direction: column;
     gap: 16px;
+    margin-top: 12px;
   }
 }
 .page-price-wrapper .seclect-plan-wrapper .list-plan .active {
@@ -319,7 +321,7 @@
   font-size: 28px;
   line-height: 42px;
   text-align: center;
-  color: #E34B31;
+  color: #F91E4E;
 }
 .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .primary-price .price {
   font-style: normal;
@@ -329,7 +331,7 @@
   /* identical to box height */
   text-align: center;
   /* Primary 2 */
-  color: #E34B31;
+  color: #F91E4E;
 }
 .page-price-wrapper .seclect-plan-wrapper .list-plan .plan-item .primary-price .month {
   font-style: normal;
@@ -409,7 +411,7 @@
 }
 .page-price-wrapper .select-your-payment-wrapper {
   background-color: #fff;
-  padding: 50px 0px 177px 0px;
+  padding: 44px 0px 70px 0px;
 }
 @media only screen and (max-width: 991px) {
   .page-price-wrapper .select-your-payment-wrapper {
@@ -1123,7 +1125,7 @@
   height: auto;
   background: #FFFFFF;
   margin-top: 8px;
-  border: 1px solid #E34B31;
+  border: 1px solid #F91E4E;
   border-radius: 8px 0px 8px 8px;
   padding: 24px;
 }

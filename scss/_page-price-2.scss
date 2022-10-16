@@ -163,10 +163,12 @@
       align-items: center;
       gap: 40px;
       justify-content: center;
+      margin-top: 16px;
 
       @include mq(max_md) {
         flex-direction: column;
         gap: 16px;
+        margin-top: 12px;
       }
 
 
@@ -314,7 +316,7 @@
             font-size: 28px;
             line-height: 42px;
             text-align: center;
-            color: #E34B31;
+            color: #F91E4E;
           }
 
           .price {
@@ -328,7 +330,7 @@
 
             /* Primary 2 */
 
-            color: #E34B31;
+            color: #F91E4E;
           }
 
           .month {
@@ -425,7 +427,7 @@
 
   .select-your-payment-wrapper {
     background-color: #fff;
-    padding: 50px 0px 177px 0px;
+    padding: 44px 0px 70px 0px;
 
     @include mq(max_md) {
       padding: 40px 0px 30px 0px;
@@ -1216,7 +1218,7 @@
     height: auto;
     background: #FFFFFF;
     margin-top: 8px;
-    border: 1px solid #E34B31;
+    border: 1px solid #F91E4E;
     border-radius: 8px 0px 8px 8px;
     padding: 24px;
 
