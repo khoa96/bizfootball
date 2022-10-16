@@ -646,7 +646,7 @@
   }
 }
 .page-price-wrapper .sports-league-tournaments-wrapper {
-  background-color: #fff;
+  background-color: #FDC400;
   padding: 65px 0px 45px 0px;
 }
 @media only screen and (max-width: 991px) {
@@ -679,8 +679,7 @@
     padding: 0;
     justify-content: center;
     overflow-x: auto;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 100vw;
   }
 }
 .page-price-wrapper .sports-league-tournaments-wrapper .list-sport {
@@ -696,6 +695,8 @@
 @media only screen and (max-width: 991px) {
   .page-price-wrapper .sports-league-tournaments-wrapper .list-sport {
     margin-bottom: 16px;
+    min-width: max-content;
+    padding: 0;
   }
 }
 .page-price-wrapper .sports-league-tournaments-wrapper .list-sport li {
@@ -725,17 +726,17 @@
   text-align: center;
   min-width: 200px;
   max-width: 200px;
-  background: rgba(249, 30, 78, 0.1);
+  background: #F91E4E;
   border-radius: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  color: #fff;
   /* identical to box height */
   text-align: center;
   margin: 0 auto;
   /* #F91E4E */
-  color: #F91E4E;
   border: none;
 }
 .page-price-wrapper .sports-league-tournaments-wrapper .btn-see-more:focus {
