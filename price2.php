@@ -188,6 +188,61 @@
               <span>Your payment information is fully protected.</span>
             </div>
           </div>
+          <div class="choose-payment-type-wrapper">
+            <div class="list-payment-type">
+              <div class="payment-type-item">
+                <div class="checked-box"></div>
+                <div class="payment-info">
+                  <h5 class="payment-title">Credit Card</h5>
+                  <div class="list-payment">
+                    <div class="payment-item">
+                      <img class="image-payment-credit" src="./images/payment-image-1.png" alt="">
+                    </div>
+                    <div class="payment-item">
+                      <img class="image-payment-visa" src="./images/payment-image-2.png" alt="">
+                    </div>
+                    <div class="payment-item">
+                    <img class="image-payment-jcb" src="./images/payment-image-3.png" alt="">
+                    </div>
+                    <div class="payment-item">
+                    <img class="image-payment-union" src="./images/payment-image-4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-type-item">
+                <div class="checked-box"></div>
+                <div class="payment-info">
+                  <h5 class="payment-title">Paypal</h5>
+                  <div class="list-payment">
+                    <div class="payment-item">
+                      <img class="image-payment-paypal" src="./images/payment-image-5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-type-item">
+                <div class="checked-box"></div>
+                <div class="payment-info">
+                  <h5 class="payment-title">Non Refundable</h5>
+                  <div class="list-payment">
+                    <div class="payment-item">
+                      <img class="image-payment-paypal" src="./images/payment-image-6.png" alt="">
+                    </div>
+                    <div class="payment-item">
+                      <img class="image-payment-paypal" src="./images/payment-image-7.png" alt="">
+                    </div>
+                    <div class="payment-item">
+                      <img class="image-payment-paypal" src="./images/payment-image-8.png" alt="">
+                    </div>
+                    <div class="payment-item">
+                      <img class="image-payment-paypal" src="./images/payment-image-9.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <button class="btn-payment">
             <span class="icon">
@@ -578,6 +633,13 @@
   $(function() {
     $("#select-plan-tabs").tabs();
   });
+
+  $(".payment-type-item").on('click', function() {
+    $(".payment-type-item").each(function() {
+      $(this).removeClass()
+    })
+    $(this).toggleClass('active')
+  })
 </script>
 
 </html>
