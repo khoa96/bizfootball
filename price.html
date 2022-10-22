@@ -1098,6 +1098,10 @@
       active: 1,
     });
 
+    const accordionItemActive = $('.ui-accordion-header-active');
+    accordionItemActive.css('border', 'none')
+    accordionItemActive.parent().css({'border': '1px solid #F91E4E', borderRadius: '8px'})
+
     $(".accordion-item").on('click', function() {
       $(".accordion-item").each(function(){
         $(this).css('border', 'none')
