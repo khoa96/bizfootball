@@ -1065,54 +1065,6 @@
     }
   }
 
-  li {
-    width: 100%;
-    height: auto;
-
-    @include mq(max_md) {
-      width: 100%;
-      margin: 0 !important;
-      padding: 0;
-    }
-
-    .icon-checked {
-      display: none;
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      width: 24px;
-      height: 24px;
-      z-index: 2;
-    }
-  }
-
-  .ui-tabs-active {
-    a {
-      border: 1px solid #F91E4E;
-      .icon-checked {
-        display: block;
-      }
-    }
-
-    .non-efundable-tab {
-      border-bottom: none;
-      position: relative;
-      z-index: 999;
-      top: 0px;
-      left: 0;
-      border-radius: 8px 8px 0px 0px;
-      // height: 90px;
-      // padding-top: 0;
-
-      @include mq(max_md) {
-        padding-top: 10px;
-        top: 0;
-        height: auto;
-      }
-    }
-  }
-
-
 
   .payment-type-item {
     padding: 10px 12px 10px 16px;
@@ -1226,20 +1178,13 @@
     width: 100%;
     height: auto;
     background: #FFFFFF;
-    // margin-top: 8px;
-    border: 1px solid #F91E4E;
-    border-radius: 8px 0px 8px 8px;
     padding: 0px 24px 24px 56px;
-    position: relative;
-    top: -6px;
 
     @include mq(max_md) {
       padding: 0px 40px 16px 56px;
       border-top: none;
       margin-top: 0;
       position: relative;
-      padding-top: 10px;
-      top: -10px;
     }
 
     .title {
@@ -1530,4 +1475,61 @@
       height: 16px;
     }
   }
+}
+
+#choose-paymen-accordion {
+  margin: 24px 0px;
+  width: 100%;
+
+  .ui-accordion-header-icon {
+    display: none !important;
+  }
+  .accordion-item {
+    margin-bottom: 12px !important;
+
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
+  }
+  .ui-state-default {
+    width: 100% !important;
+    height: auto !important;
+    display: flex;
+    justify-content: flex-start !important;
+  }
+  li {
+    width: 100%;
+    height: auto;
+
+    @include mq(max_md) {
+      width: 100%;
+      margin: 0 !important;
+      padding: 0;
+    }
+
+    .icon-checked {
+      display: none;
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 24px;
+      height: 24px;
+      z-index: 2;
+    }
+  }
+
+  .ui-accordion-header-active {
+    .icon-checked {
+      display: block !important;
+    }
+  }
+
+  .ui-accordion-content-active {
+
+  }
+
+  .accordion-content {
+    border-radius: 0px 0px 8px 8px;;
+  }
+
 }
