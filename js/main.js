@@ -206,15 +206,9 @@ $(function () {
 });
 
 //handle show popup
-$("body").css({
-  overflow: "hidden",
-});
 $(".popup").addClass("popup--show");
 // function - Hide popup & body scroll off
 const hidePopup = () => {
-  $("body").css({
-    overflow: "auto",
-  });
   $(".popup").removeClass("popup--show");
 };
 // Hide popup on click close button
